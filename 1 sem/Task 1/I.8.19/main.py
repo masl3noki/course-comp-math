@@ -14,13 +14,19 @@ t = sp.symbols('t')
 
 
 def comp_sin():
-    y = sp.sin(t)
-    return y
+    return sp.sin(t)
+
+
+def tcomp_sin():
+    return sp.sin(t+10)
 
 
 def comp_exp():
-    y = sp.exp(t)
-    return y
+    return sp.exp(t)
+
+
+def tcomp_exp():
+    return sp.exp(t+10)
 
 
 def mac_series(n, u):
@@ -42,7 +48,7 @@ def mac_series(n, u):
 
 n = int(input("f=sin(x). Введите n: "))
 
-expr = mac_series(n, comp_sin())
+#expr = mac_series(n, comp_sin())
 '''
 expr_round = expr
 for a in sp.preorder_traversal(expr):
@@ -51,14 +57,14 @@ for a in sp.preorder_traversal(expr):
 '''
 
 print('sin(t):\n',
-      'На отрезке [0; 1]: ', expr, '\n',
-      'На отрезке [10; 11]: ', '\n') #TODO сделать для отрезка (подставить t-10 в синус)
+      'На отрезке [0; 1]: ', mac_series(n, comp_sin()), '\n',
+      'На отрезке [10; 11]: ', mac_series(n, tcomp_sin()),'\n') #TODO сделать для отрезка (подставить t-10 в синус)
 
 n = int(input("f=exp(x). Введите n: "))
 
 print('exp(t):\n',
       'На отрезке [0; 1]: ', mac_series(n, comp_exp()), '\n',
-      'На отрезке [10; 11]: ', '\n') #TODO сделать для отрезка (подставить t-10 в exp)
+      'На отрезке [10; 11]: ', mac_series(n, tcomp_exp()), '\n') #TODO сделать для отрезка (подставить t-10 в exp)
 
 '''''
 def optimal_n(u_, i):
