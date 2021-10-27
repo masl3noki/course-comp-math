@@ -1,6 +1,6 @@
 Найти полуширину y = x*e^(-x^2):
 
-
+![крутой график](https://github.com/masl3noki/ComputationalMath/blob/main/1%20sem/Task%201/IV.12.8/figure1.png)
 
 Находим один единственный экстремум функции при x>0: d(func)/dx = 0 => x* = sqrt(1/2)
 Далее, пусть phi = значение y(x*)/2.
