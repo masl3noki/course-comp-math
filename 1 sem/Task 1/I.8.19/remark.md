@@ -4,9 +4,14 @@
 * для sin(x): 
    - n=5. Остаточный член = 0.0007 на отрезке [0; 1]
    - n=NAN. Остаточный член = NAN на отрезке [10; 11]
+
+![sin](https://github.com/masl3noki/ComputationalMath/blob/main/1%20sem/Task%201/I.8.19/figure_sin.png)
+
 * для exp(x): 
    - n=6. Остаточный член = 0.0005 на отрезке [0; 1]
    - n=NAN. Остаточный член = NAN на отрезке [10; 11]
+
+![exp](https://github.com/masl3noki/ComputationalMath/blob/main/1%20sem/Task%201/I.8.19/figure_exp.png)
 
 ## Функция нахождения оптимального n:
 
