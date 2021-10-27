@@ -15,19 +15,19 @@ def sim(x, method): #итерации
         return x
     return sim(method(x), method)
 
+
 #def local:
         #TODO: сделать локализацию в виде функции
 
 
-precision = 1e-3
+precision = 10e-3
 #p = pow(precision, ) #точное округление
 roots = []
 print("Нахождение полуширины функции")
 h = float(input("Введите оптимальное количество шага (шаг <= 1): "))
 
 
-f = lambda x: x * m.exp(-x**2) - (1 / (2 * m.sqrt(2 * m.e))) #y_3
-
+f = lambda x: x * m.exp(-x**2) - (1 / (2 * m.sqrt(2 * m.e)))  #y_3
 #Локализация корней (ака x*)
 for x in np.arange(0, 2, h):
     if (f(x) * f(x+h)) <= 0:
